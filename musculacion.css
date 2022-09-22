@@ -160,3 +160,104 @@ p{
     font-family: sans-serif;
     font-size: large;
 }
+
+@media screen and (max-width: 768px) {
+
+    .grilla{
+
+        display: grid;
+        height: 100%;
+        width: 100%;
+        grid-template-areas: 
+        "header"
+        "section"
+        "footer";
+    grid-template-rows: 20% auto 15%;
+    grid-template-columns: 100%;
+
+    }
+
+    header{
+
+        grid-area: header;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: space-between;
+        background-color: black;
+
+
+    
+}
+    .logo2{
+
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+
+    }
+
+
+    #logo{
+
+        width:  20%;
+      
+        
+    }
+
+    .BARRA{
+
+        display: flex;
+        flex-direction: column;
+        justify-self: center;
+        align-self: center;
+        font-size: 10pt;
+        width: auto;
+
+    }
+
+
+    section{
+
+    grid-area: section;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    justify-content: space-between;
+    
+    }
+
+
+
+    h3{
+
+        display: none;
+    }
+
+    .informacion{
+
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+
+    p{
+
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+
+    #foto {
+
+        width: 400px;
+        padding: 0%;
+    }
+
+    #frase{
+
+        font-family: sans-serif;
+        font-size: 15pt;
+        color: white
+    
+    }
+}
